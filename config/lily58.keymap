@@ -43,17 +43,17 @@
 		gamer_layer {
 						bindings = <
 			//╭────────────┬────────────┬────────────┬────────────┬────────────┬────────────╮   					     ╭────────────┬────────────┬────────────┬────────────┬────────────┬────────────╮
-			//│    ESC     │    1       │    2       │    3       │    4       │    5       │   					     │    6       │    7       │    8       │    9       │    0       │    -       │
-			     &kp ESC	  &kp N1	   &kp N2       &kp N3       &kp N4       &kp N5      					            &kp N6        &kp N7      &kp N8       &kp N9       &kp N0      &kp MINUS
+			//│    ESC     │            │    1       │    2       │    3       │    4       │   					     │    6       │    7       │    8       │    9       │    0       │    -       │
+			     &kp ESC	   &trans       &kp N1	    &kp N2       &kp N3       &kp N4       					            &kp N6        &kp N7      &kp N8       &kp N9       &kp N0      &kp MINUS
 			//├────────────┼────────────┼────────────┼────────────┼────────────┼────────────┤   					     ├────────────┼────────────┼────────────┼────────────┼────────────┼────────────┤
-			//│            │    TAB     │    Q       │    W       │    E       │    R       │   			   		     │      Y     │    U       │    I       │    O       │    P       │    #       │
-				   &trans       &kp TAB      &kp W        &kp E        &kp R        &kp T       					              &kp Y       &kp U       &kp I        &kp O        &kp P       &kp HASH
+			//│    TAB     │    TAB     │    Q       │    W       │    E       │    R       │   			   		     │      Y     │    U       │    I       │    O       │    P       │    #       │
+			     &kp TAB      &kp TAB      &kp Q        &kp W        &kp E        &kp R         					          &kp Y       &kp U       &kp I        &kp O        &kp P       &kp HASH
 			//├────────────┼────────────┼────────────┼────────────┼────────────┼────────────┤   					     ├────────────┼────────────┼────────────┼────────────┼────────────┼────────────┤
-			//│            │    SHIFT   │    S       │    A       │    D       │    G       │   					     │      H     │    J       │    K       │    L       │    ;       │    '       │
-				   &trans   	  &kp A        &kp S        &kp D        &kp F        &kp G       					            &kp H        &kp J         &kp K       &kp L        &kp SEMI     &kp SQT
+			//│    SHIFT   │    SHIFT   │    A       │    S       │    D       │    F       │   					     │      H     │    J       │    K       │    L       │    ;       │    '       │
+			     &kp LSHFT	 &kp LSHFT	  &kp A        &kp S        &kp D        &kp F         					            &kp H        &kp J         &kp K       &kp L        &kp SEMI     &kp SQT
 			//├────────────┼────────────┼────────────┼────────────┼────────────┼────────────┼────────────╮   ╭───────────┼────────────┼────────────┼────────────┼────────────┼────────────┼────────────┤
-			//│            │    CTRL    │    Z       │    X       │    C       │    V       │      B     │   │      ]    │     N      │      M     │      ,     │      .     │      /     │    SHIFT   │
-			      &trans        &kp Z      &kp X        &kp C         &kp V      &kp B        &kp LBKT          &kp RBKT      &kp N        &kp M       &kp COMMA    &kp DOT      &kp FSLH     &kp RSHFT
+			//│    CTRL    │    CTRL    │    Z       │    X       │    C       │    V       │      B     │   │      ]    │     N      │      M     │      ,     │      .     │      /     │    SHIFT   │
+			    &kp LCTRL    &kp LCTRL   &kp Z      &kp X      &kp C      &kp V      &kp B    &kp B          &kp RBKT      &kp N        &kp M       &kp COMMA    &kp DOT      &kp FSLH     &kp RSHFT
 			//╰────────────┴────────────┴────────────┼────────────┼────────────┼────────────┼────────────┤   ├───────────┼────────────┼────────────┼────────────┼────────────┴────────────┴────────────╯
 			//								         │ EXIT GAMER │            │            │    SPACE   │   │   ENTER   │   RAISE    │   BSPC     │    GUI     │
 												      &tog GAMER   &trans      &trans      &kp SPACE         &kp RET      &mo 2       &kp BSPC     &kp RGUI  
