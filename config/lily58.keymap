@@ -10,9 +10,9 @@
 #include <dt-bindings/zmk/ext_power.h>
 
 #define DEFAULT 0
-#define GMR 1
-
-#define NONE 0
+#define GAMER 1
+#define LOWER 2
+#define RAISE 3
 / {
     keymap {
         compatible = "zmk,keymap";
@@ -33,7 +33,7 @@
 			    &kp LCTRL   &kp Z      &kp X      &kp C      &kp V      &kp B     &kp LBKT                     &kp RBKT      &kp N        &kp M       &kp COMMA    &kp DOT      &kp FSLH     &kp RSHFT
 			//╰────────────┴────────────┴────────────┼────────────┼────────────┼────────────┼────────────┤   ├───────────┼────────────┼────────────┼────────────┼────────────┴────────────┴────────────╯
 			//								         │    ALT     │    GUI     │    LOWER   │    SPACE   │   │   ENTER   │   RAISE    │   BSPC     │    GUI     │
-												        &kp LALT     &kp LGUI      &mo 1      &kp SPACE         &kp RET      &mo 2       &kp BSPC     &kp RGUI  
+												        &kp LALT     &kp LGUI     &mo LOWER   &kp SPACE         &kp RET    &mo RAISE   &kp BSPC     &kp RGUI  
 			//								         ╰───────────────────────────────────────────────────╯   ╰──────────────────────────────────────────────────╯
             >;
 
@@ -55,8 +55,8 @@
 			//│            │    CTRL    │    Z       │    X       │    C       │    V       │      B     │   │      ]    │     N      │      M     │      ,     │      .     │      /     │    SHIFT   │
 			      &trans        &kp Z      &kp X        &kp C         &kp V      &kp B        &kp LBKT          &kp RBKT      &kp N        &kp M       &kp COMMA    &kp DOT      &kp FSLH     &kp RSHFT
 			//╰────────────┴────────────┴────────────┼────────────┼────────────┼────────────┼────────────┤   ├───────────┼────────────┼────────────┼────────────┼────────────┴────────────┴────────────╯
-			//								         │    GAMER   │            │            │    SPACE   │   │   ENTER   │   RAISE    │   BSPC     │    GUI     │
-												        &tog GMR      &trans      &trans      &kp SPACE         &kp RET      &mo 2       &kp BSPC     &kp RGUI  
+			//								         │ EXIT GAMER │            │            │    SPACE   │   │   ENTER   │   RAISE    │   BSPC     │    GUI     │
+												      &tog GAMER   &trans      &trans      &kp SPACE         &kp RET      &mo 2       &kp BSPC     &kp RGUI  
 			//								         ╰───────────────────────────────────────────────────╯   ╰──────────────────────────────────────────────────╯
             >;
 
@@ -76,8 +76,8 @@
 			//│    `       │    !       │    @       │    #       │    $       │    %       │   					     │      ^     │    &       │    *       │    (       │    )       │    ~       │
 				&kp GRAVE     &kp EXCL     &kp AT       &kp HASH    &kp DOLLAR   &kp PRCNT                                 &kp CARET     &kp AMPS   &kp KP_MULTIPLY &kp LPAR   &kp RPAR     &kp TILDE
 			//├────────────┼────────────┼────────────┼────────────┼────────────┼────────────┼────────────╮   ╭───────────┼────────────┼────────────┼────────────┼────────────┼────────────┼────────────┤
-			//│            │  POWER ON  │ POWER OFF  │POWER TOGGLE│            │            │            │   │           │            │     -      │      +     │      {     │      }     │      |     │
-			   &trans &ext_power EP_ON &ext_power EP_OFF &ext_power EP_TOG &trans  &trans      &tog GMR           &trans       &trans     &kp MINUS    &kp KP_PLUS   &kp LBRC     &kp RBRC    &kp PIPE
+			//│            │  POWER ON  │ POWER OFF  │POWER TOGGLE│            │            │   GAMER    │   │           │            │     -      │      +     │      {     │      }     │      |     │
+			   &trans &ext_power EP_ON &ext_power EP_OFF &ext_power EP_TOG &trans  &trans      &tog GAMER       &trans       &trans     &kp MINUS    &kp KP_PLUS   &kp LBRC     &kp RBRC    &kp PIPE
 			//╰────────────┴────────────┴────────────┼────────────┼────────────┼────────────┼────────────┤   ├───────────┼────────────┼────────────┼────────────┼────────────┴────────────┴────────────╯
 			//								         │            │            │            │            │   │           │            │            │            │
 												        &trans        &trans       &trans        &trans          &trans      &trans       &trans       &trans  
