@@ -9,7 +9,7 @@ jobs:
     steps:
       - name: Get current datetime
         id: date
-        run: echo "::set-output name=date::$(date +'%Y-%m-%d_%H:%M:%S')"
+        run: echo "::set-output name=date::$(date +'%Y.%m.%d._%H.%M.%S')"
       - name: Checkout code
         uses: actions/checkout@v2
       - name: Download artifact
