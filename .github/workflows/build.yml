@@ -7,6 +7,9 @@ jobs:
     runs-on: ubuntu-latest
     needs: build
     steps:
+      - name: Get current datetime
+        id: date
+        run: echo "::set-output name=date::$(date +'%Y-%m-%d_%H:%M:%S')"
       - name: Checkout code
         uses: actions/checkout@v2
       - name: Download artifact
@@ -20,6 +23,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
         run: >-
           gh release create ${{ github.ref_name }}
-          "/home/runner/work/zmk-config/zmk-config/firmware"
+          "/home/runner/work/zmk-config/zmk-config/lily58_left-nice_nano_v2-zmk.uf2"
+          "/home/runner/work/zmk-config/zmk-config/lily58_right-nice_nano_v2-zmk.uf2"
           --generate-notes
-          --title "Version ${{ github.ref_name }}"
+          --title "v${{ github.ref_name }}_${{ github.event.head_commit.message}}_${{ steps.date.outputs.date }}"
