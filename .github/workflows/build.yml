@@ -12,7 +12,9 @@ jobs:
         with:
           name: firmware
           path: firmware.zip
-      - name: Release
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Create release
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
         run: >-
