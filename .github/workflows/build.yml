@@ -22,8 +22,8 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
         run: >-
-          gh release create v0.${{ github.run_id }}
+          gh release create v0.${{ github.run_number }}
           "/home/runner/work/zmk-config/zmk-config/lily58_left-nice_nano_v2-zmk.uf2"
           "/home/runner/work/zmk-config/zmk-config/lily58_right-nice_nano_v2-zmk.uf2"
           --notes "${{ github.event.head_commit.message}}"
-          --title "v0.${{ github.run_id }}"
+          --title "v0.${{ github.run_number }}"
