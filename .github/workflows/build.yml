@@ -8,7 +8,10 @@ jobs:
     needs: build
     steps:
       - name: Release
-        uses: softprops/action-gh-release@v1
-        with:
-          files: firmware.zip
-          token: ${{ secrets.GH_TOKEN }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+        run: >-
+          gh release create ${{ github.ref_name }}
+          "firmware.zip"
+          --generate-notes
+          --title "Version ${{ github.ref_name }}"
