@@ -15,7 +15,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
       - name: tree
-        run: find | sed 's|[^/]*/|- |g'
+        run: cd /home/runner/work/zmk-config && find | sed 's|[^/]*/|- |g'
       - name: Create release
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
