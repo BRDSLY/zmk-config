@@ -34,8 +34,8 @@
 			//│    CTRL    │    Z       │    X       │    C       │    V       │    B       │      [     │   │      ]    │     N      │      M     │      ,     │      .     │      /     │    SHIFT   │
 			    &kp LCTRL   &kp Z      &kp X      &kp C      &kp V      &kp B     &kp LBKT                     &kp RBKT      &kp N        &kp M       &kp COMMA    &kp DOT      &kp FSLH     &kp RSHFT
 			//╰────────────┴────────────┴────────────┼────────────┼────────────┼────────────┼────────────┤   ├───────────┼────────────┼────────────┼────────────┼────────────┴────────────┴────────────╯
-			//								         │    ALT     │    GUI     │    LOWER   │    SPACE   │   │   ENTER   │   RAISE    │   BSPC     │    GUI     │
-												        &kp LALT     &kp LGUI     &mo LOWER   &kp SPACE         &kp RET    &mo RAISE   &kp BSPC     &kp RGUI  
+			//								         │    GUI     │    LOWER   │    ALT     │    SPACE   │   │   ENTER   │   BSPC     │   RAISE    │    GUI     │
+												        &kp LGUI     &mo LOWER     &kp LALT   &kp SPACE         &kp RET    &kp BSPC     &mo RAISE      &kp RGUI  
 			//								         ╰───────────────────────────────────────────────────╯   ╰──────────────────────────────────────────────────╯
             >;
 
