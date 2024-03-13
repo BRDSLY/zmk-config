@@ -82,7 +82,7 @@
 			   &trans &ext_power EP_ON &ext_power EP_OFF &ext_power EP_TOG &trans  &trans      &tog GAMER       &trans       &trans     &kp MINUS    &kp KP_PLUS   &kp LBRC     &kp RBRC    &kp PIPE
 			//╰────────────┴────────────┴────────────┼────────────┼────────────┼────────────┼────────────┤   ├───────────┼────────────┼────────────┼────────────┼────────────┴────────────┴────────────╯
 			//								         │            │            │            │            │   │    del    │            │            │            │
-												        &trans        &trans       &trans        &trans          &kp del      &trans       &trans       &trans  
+												        &trans        &trans       &trans        &trans          &kp DEL      &trans       &trans       &trans  
 			//								         ╰───────────────────────────────────────────────────╯   ╰──────────────────────────────────────────────────╯
             >;
 
