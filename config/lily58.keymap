@@ -79,7 +79,7 @@
 				&kp GRAVE     &kp EXCL     &kp AT       &kp HASH    &kp DOLLAR   &kp PRCNT                                 &kp CARET     &kp AMPS   &kp KP_MULTIPLY &kp LPAR   &kp RPAR     &kp TILDE
 			//├────────────┼────────────┼────────────┼────────────┼────────────┼────────────┼────────────╮   ╭───────────┼────────────┼────────────┼────────────┼────────────┼────────────┼────────────┤
 			//│            │  POWER ON  │ POWER OFF  │POWER TOGGLE│            │            │   GAMER    │   │           │            │     -      │      +     │      {     │      }     │      |     │
-			   &trans &ext_power EP_ON &ext_power EP_OFF &ext_power EP_TOG &trans  &trans      &tog GAMER       &trans       &trans     &kp MINUS    &kp KP_PLUS   &kp LBRC     &kp RBRC    &kp PIPE
+			   &trans &ext_power EP_ON &ext_power EP_OFF &ext_power EP_TOG &trans  &trans      &tog GAMER       &trans       &trans     &kp MINUS    &kp KP_PLUS   &kp LBRC     &kp RBRC    &kp PIPE2
 			//╰────────────┴────────────┴────────────┼────────────┼────────────┼────────────┼────────────┤   ├───────────┼────────────┼────────────┼────────────┼────────────┴────────────┴────────────╯
 			//								         │            │            │            │            │   │    del    │            │            │            │
 												        &trans        &trans       &trans        &trans          &kp DEL      &trans       &trans       &trans  
@@ -102,7 +102,7 @@
 				 &kp F1       &kp F2        &kp F3      &kp F4       &kp F5       &kp F6                                    &kp LEFT    &kp DOWN      &kp UP       &kp RIGHT     &trans      &trans
 			//├────────────┼────────────┼────────────┼────────────┼────────────┼────────────┼────────────╮   ╭───────────┼────────────┼────────────┼────────────┼────────────┼────────────┼────────────┤
 			//│     F7     │    F8      │    F9      │    F10     │    F11     │    F12     │            │   │           │      +     │     -      │      =     │      [     │      ]     │      \     │
-			     &kp F7       &kp F8       &kp F9       &kp F10      &kp F11      &kp F12      &trans           &trans     &kp KP_PLUS  &kp MINUS    &kp EQUAL    &kp LBKT     &kp RBKT    &kp BSLH
+			     &kp F7       &kp F8       &kp F9       &kp F10      &kp F11      &kp F12      &trans           &trans     &kp KP_PLUS  &kp MINUS    &kp EQUAL    &kp LBKT     &kp RBKT    &kp NUBS
 			//╰────────────┴────────────┴────────────┼────────────┼────────────┼────────────┼────────────┤   ├───────────┼────────────┼────────────┼────────────┼────────────┴────────────┴────────────╯
 			//								         │            │            │            │            │   │           │            │            │            │
 												        &trans        &trans       &trans        &trans          &trans      &trans       &trans       &trans  
