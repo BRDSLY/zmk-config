@@ -12,9 +12,8 @@
 
 #define DEFAULT 0
 #define NONE 0
-#define GAMER 1
-#define LOWER 2
-#define RAISE 3
+#define LOWER 1
+#define RAISE 2
 / {
     keymap {
         compatible = "zmk,keymap";
