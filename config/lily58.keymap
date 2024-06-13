@@ -42,47 +42,23 @@
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
-		gamer_layer {
-						bindings = <
-			//╭────────────┬────────────┬────────────┬────────────┬────────────┬────────────╮   					     ╭────────────┬────────────┬────────────┬────────────┬────────────┬────────────╮
-			//│    ESC     │            │    1       │    2       │    3       │    4       │   					     │    6       │    7       │    8       │    9       │    0       │    -       │
-			     &kp ESC	   &trans       &kp N1	    &kp N2       &kp N3       &kp N4       					            &kp N6        &kp N7      &kp N8       &kp N9       &kp N0      &kp MINUS
-			//├────────────┼────────────┼────────────┼────────────┼────────────┼────────────┤   					     ├────────────┼────────────┼────────────┼────────────┼────────────┼────────────┤
-			//│    TAB     │    TAB     │    Q       │    W       │    E       │    R       │   			   		     │      Y     │    U       │    I       │    O       │    P       │    #       │
-			     &kp TAB      &kp TAB      &kp Q        &kp W        &kp E        &kp R         					          &kp Y       &kp U       &kp I        &kp O        &kp P       &kp HASH
-			//├────────────┼────────────┼────────────┼────────────┼────────────┼────────────┤   					     ├────────────┼────────────┼────────────┼────────────┼────────────┼────────────┤
-			//│    SHIFT   │    SHIFT   │    A       │    S       │    D       │    F       │   					     │      H     │    J       │    K       │    L       │    ;       │    '       │
-			     &kp LSHFT	 &kp LSHFT	  &kp A        &kp S        &kp D        &kp F         					            &kp H        &kp J         &kp K       &kp L        &kp SEMI     &kp SQT
-			//├────────────┼────────────┼────────────┼────────────┼────────────┼────────────┼────────────╮   ╭───────────┼────────────┼────────────┼────────────┼────────────┼────────────┼────────────┤
-			//│    CTRL    │    CTRL    │    Z       │    X       │    C       │    V       │      B     │   │      ]    │     N      │      M     │      ,     │      .     │      /     │    SHIFT   │
-			    &kp LCTRL    &kp LCTRL   &kp Z      &kp X      &kp C      &kp V      &kp B    &kp B          &kp RBKT      &kp N        &kp M       &kp COMMA    &kp DOT      &kp FSLH     &kp RSHFT
-			//╰────────────┴────────────┴────────────┼────────────┼────────────┼────────────┼────────────┤   ├───────────┼────────────┼────────────┼────────────┼────────────┴────────────┴────────────╯
-			//								         │ EXIT GAMER │            │            │    SPACE   │   │   ENTER   │   RAISE    │   BSPC     │    GUI     │
-												      &tog GAMER   &trans      &trans      &kp SPACE         &kp RET      &mo 2       &kp BSPC     &kp RGUI  
-			//								         ╰───────────────────────────────────────────────────╯   ╰──────────────────────────────────────────────────╯
-            >;
-
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
-
-		};
-
         lower_layer {  
 			bindings = <
 			//╭────────────┬────────────┬────────────┬────────────┬────────────┬────────────╮   					     ╭────────────┬────────────┬────────────┬────────────┬────────────┬────────────╮
 			//│    BTCLR   │    BT1     │    BT2     │    BT3     │    BT4     │   BT5      │   					     │            │            │            │            │            │  OUT TOG   │
-			    &bt BT_CLR  &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4                                &trans        &trans       &trans       &trans       &trans    &out OUT_TOG
+			    &bt BT_CLR  &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4                                 &none         &none        &none        &none        &none    &out OUT_TOG
 			//├────────────┼────────────┼────────────┼────────────┼────────────┼────────────┤   					     ├────────────┼────────────┼────────────┼────────────┼────────────┼────────────┤
 			//│    `       │    !       │    @       │    #       │    $       │    %       │   			   		     │      ^     │    &       │    *       │    (       │    )       │     ~      │
 				&kp GRAVE     &kp EXCL     &kp AT       &kp HASH    &kp DOLLAR   &kp PRCNT                                  &kp CARET     &kp AMPS   &kp KP_MULTIPLY &kp LPAR   &kp RPAR     &kp TILDE
 			//├────────────┼────────────┼────────────┼────────────┼────────────┼────────────┤   					     ├────────────┼────────────┼────────────┼────────────┼────────────┼────────────┤
 			//│    SHIFT   │    1       │    2       │    3       │    4       │    5       │   					     │    <-      │    v       │    ^       │    ->      │            │            │
-				&kp LSHFT	  &kp N1	   &kp N2       &kp N3       &kp N4       &kp N5                                    &kp LEFT    &kp DOWN      &kp UP       &kp RIGHT     &trans      &trans
+				&kp LSHFT	  &kp N1	   &kp N2       &kp N3       &kp N4       &kp N5                                    &kp LEFT    &kp DOWN      &kp UP       &kp RIGHT      &none       &none
 			//├────────────┼────────────┼────────────┼────────────┼────────────┼────────────┼────────────╮   ╭───────────┼────────────┼────────────┼────────────┼────────────┼────────────┼────────────┤
 			//│    CTRL    │    6       │    7       │    8       │    9       │    0       │   GAMER    │   │           │            │     -      │      +     │      {     │      }     │      |     │
-			    &kp LCTRL     &kp N6        &kp N7      &kp N8       &kp N9       &kp N0       &tog GAMER       &trans       &trans     &kp MINUS    &kp KP_PLUS   &kp LBRC     &kp RBRC    &kp PIPE2
+			    &kp LCTRL     &kp N6        &kp N7      &kp N8       &kp N9       &kp N0       &tog GAMER        &none        &none     &kp MINUS    &kp KP_PLUS   &kp LBRC     &kp RBRC    &kp PIPE2
 			//╰────────────┴────────────┴────────────┼────────────┼────────────┼────────────┼────────────┤   ├───────────┼────────────┼────────────┼────────────┼────────────┴────────────┴────────────╯
-			//								         │    GUI     │            │    ALT     │            │   │    del    │            │            │            │
-												        &kp LGUI      &trans       &kp LALT      &trans          &kp DEL      &trans       &trans       &trans  
+			//								         │    GUI     │    LOWER   │    ALT     │    SPACE   │   │    del    │   RETURN   │   RAISE    │    GUI     │
+												        &kp LGUI     &mo LOWER     &kp LALT   &kp SPACE          &kp DEL    &kp RET    &mo RAISE      &kp RGUI  
 			//								         ╰───────────────────────────────────────────────────╯   ╰──────────────────────────────────────────────────╯
             >;
 
@@ -92,20 +68,20 @@
         raise_layer {
 			bindings = <
 			//╭────────────┬────────────┬────────────┬────────────┬────────────┬────────────╮   					     ╭────────────┬────────────┬────────────┬────────────┬────────────┬────────────╮
-			//│            │            │            │            │            │            │   					     │            │            │            │            │            │            │
-			     &trans        &trans       &trans       &trans       &trans       &trans                                    &trans        &trans       &trans       &trans       &trans       &trans
+			//│    F13     │    F14     │    F15     │    F16     │    F17     │    F18     │   					     │    F19     │    F20     │    F21     │    F22     │      F23   │     F24    │
+			    &kp F13      &kp F14       &kp F15     &kp F16       &kp F17      &kp F18                                  &kp F19      &kp F20       &kp 21       &kp F22       &kp 23      &kp F24    
 			//├────────────┼────────────┼────────────┼────────────┼────────────┼────────────┤   					     ├────────────┼────────────┼────────────┼────────────┼────────────┼────────────┤
-			//│            │            │            │            │            │            │   					     │            │            │            │            │            │            │
-				 &trans         &trans      &trans        &trans       &trans      &trans      					              &trans      &trans      &trans        &trans       &trans      &trans   
+			//│    F1      │    F2      │    F3      │    F4      │    F5      │    F6      │   					     │     F7     │    F8      │    F9      │    F10     │    F11     │    F12     │
+				 &kp F1       &kp F2        &kp F3      &kp F4       &kp F5       &kp F6       					            &kp F7       &kp F8       &kp F9       &kp F10      &kp F11      &kp F12   
 			//├────────────┼────────────┼────────────┼────────────┼────────────┼────────────┤   					     ├────────────┼────────────┼────────────┼────────────┼────────────┼────────────┤
-			//│    F1      │    F2      │    F3      │    F4      │    F5      │    F6      │   					     │             │            │            │            │            │           
-				 &kp F1       &kp F2        &kp F3      &kp F4       &kp F5       &kp F6                                       &trans      &trans      &trans        &trans       &trans      &trans   
+			//│    SHIFT   │            │            │            │            │            │   					     │            │            │            │            │            │           
+				&kp LSHFT	    &none       &none         &none        &none       &none                                     &C_PREV      &C_PP         &C_NEXT      &none        &none       &none   
 			//├────────────┼────────────┼────────────┼────────────┼────────────┼────────────┼────────────╮   ╭───────────┼────────────┼────────────┼────────────┼────────────┼────────────┼────────────┤
-			//│     F7     │    F8      │    F9      │    F10     │    F11     │    F12     │            │   │           │      +     │     -      │      =     │      [     │      ]     │      \     │
-			     &kp F7       &kp F8       &kp F9       &kp F10      &kp F11      &kp F12      &trans           &trans     &kp KP_PLUS  &kp MINUS    &kp EQUAL    &kp LBKT     &kp RBKT    &kp NUBS
+			//│    CTRL    │            │            │            │            │            │            │   │           │      +     │     -      │      =     │      [     │      ]     │      \     │
+			    &kp LCTRL        &none       &none        &none        &none       &none       &none            &none     &kp KP_PLUS  &kp MINUS    &kp EQUAL    &kp LBKT     &kp RBKT    &kp NUBS
 			//╰────────────┴────────────┴────────────┼────────────┼────────────┼────────────┼────────────┤   ├───────────┼────────────┼────────────┼────────────┼────────────┴────────────┴────────────╯
-			//								         │            │            │            │            │   │           │            │            │            │
-												        &trans        &trans       &trans        &trans          &trans      &trans       &trans       &trans  
+			//								         │    GUI     │    LOWER   │    ALT     │    SPACE   │   │   BSPC    │   RETURN   │   RAISE    │    GUI     │
+												        &kp LGUI     &mo LOWER     &kp LALT   &kp SPACE        &kp BSPC     &kp RET    &mo RAISE      &kp RGUI  
 			//								         ╰───────────────────────────────────────────────────╯   ╰──────────────────────────────────────────────────╯
             >;
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
