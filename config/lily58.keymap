@@ -48,7 +48,7 @@
 			    &bt BT_CLR  &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4                                 &none         &none        &none        &none        &none    &out OUT_TOG
 			//├────────────┼────────────┼────────────┼────────────┼────────────┼────────────┤   					     ├────────────┼────────────┼────────────┼────────────┼────────────┼────────────┤
 			//│    `       │    !       │    @       │    #       │    $       │    %       │   			   		     │ MEDIA PREV │ PLAY/PAUSE │ MEDIA NEXT │            │            │            │
-				&kp GRAVE     &kp EXCL     &kp AT       &kp HASH    &kp DOLLAR   &kp PRCNT                                   &C_PREV      &C_PP        &C_NEXT      &none        &none       &none   
+				&kp GRAVE     &kp EXCL     &kp AT       &kp HASH    &kp DOLLAR   &kp PRCNT                                 &kp C_PREV    &kp C_PP     &kp C_NEXT      &none        &none       &none   
 			//├────────────┼────────────┼────────────┼────────────┼────────────┼────────────┤   					     ├────────────┼────────────┼────────────┼────────────┼────────────┼────────────┤
 			//│    SHIFT   │    1       │    2       │    3       │    4       │    5       │   					     │      ^     │    &       │    *       │    (       │    )       │     ~      │
 				&kp LSHFT	  &kp N1	   &kp N2       &kp N3       &kp N4       &kp N5                                    &kp CARET     &kp AMPS   &kp KP_MULTIPLY &kp LPAR   &kp RPAR     &kp TILDE
