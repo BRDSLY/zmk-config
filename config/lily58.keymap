@@ -40,7 +40,7 @@
 				&kp LSHFT	  &kp A        &kp S        &kp D        &kp F        &kp G       					            &kp H        &kp J         &kp K       &kp L        &kp SEMI     &kp SQT
 			//├────────────┼────────────┼────────────┼────────────┼────────────┼────────────┼────────────╮   ╭───────────┼────────────┼────────────┼────────────┼────────────┼────────────┼────────────┤
 			//│    CTRL    │    Z       │    X       │    C       │    V       │    B       │      [     │   │      ]    │     N      │      M     │      ,     │      .     │      /     │    SHIFT   │
-			    &kp LCTRL   &kp Z      &kp X      &kp C      &kp V      &kp B     &kp LBKT                     &kp RBKT      &kp N        &kp M       &kp COMMA    &kp DOT      &kp FSLH     &kp RSHFT
+			    &kp LCTRL     &kp Z        &kp X        &kp C        &kp V        &kp B       &kp LBKT          &kp RBKT     &kp N        &kp M       &kp COMMA    &kp DOT      &kp FSLH     &kp RSHFT
 			//╰────────────┴────────────┴────────────┼────────────┼────────────┼────────────┼────────────┤   ├───────────┼────────────┼────────────┼────────────┼────────────┴────────────┴────────────╯
 			//								         │    GUI     │    LOWER   │    ALT     │    SPACE   │   │   BSPC    │   RETURN   │   RAISE    │    ALT     │
 												        &kp LGUI     &mo LOWER     &kp LALT   &kp SPACE        &kp BSPC     &kp RET    &mo RAISE       &kp RALT 
@@ -62,14 +62,14 @@
 			//│    SHIFT   │    1       │    2       │    3       │    4       │    5       │   					     │      ^     │    &       │    *       │    (       │    )       │     ~      │
 				&kp LSHFT	  &kp N1	   &kp N2       &kp N3       &kp N4       &kp N5                                    &kp CARET     &kp AMPS   &kp KP_MULTIPLY &kp LPAR   &kp RPAR     &kp TILDE
 			//├────────────┼────────────┼────────────┼────────────┼────────────┼────────────┼────────────╮   ╭───────────┼────────────┼────────────┼────────────┼────────────┼────────────┼────────────┤
-			//│    CTRL    │    6       │    7       │    8       │    9       │    0       │            │   │           │            │     -      │      +     │      {     │      }     │      |     │
-			    &kp LCTRL     &kp N6        &kp N7      &kp N8       &kp N9       &kp N0        &none           &none        &none     &kp MINUS    &kp KP_PLUS   &kp LBRC     &kp RBRC    &kp PIPE2
+			//│    CTRL    │    6       │    7       │    8       │    9       │    0       │            │   │           │            │     -      │      +     │      {     │      }     │    SHIFT   │
+			    &kp LCTRL     &kp N6        &kp N7      &kp N8       &kp N9       &kp N0        &none           &none        &none     &kp MINUS    &kp KP_PLUS   &kp LBRC     &kp RBRC      &kp RSHFT
 			//╰────────────┴────────────┴────────────┼────────────┼────────────┼────────────┼────────────┤   ├───────────┼────────────┼────────────┼────────────┼────────────┴────────────┴────────────╯
 			//								         │    GUI     │    LOWER   │    ALT     │    SPACE   │   │    del    │   RETURN   │   RAISE    │    ALT     │
 												        &kp LGUI     &mo LOWER     &kp LALT   &kp SPACE          &kp DEL    &kp RET    &mo RAISE       &kp RALT 
 			//								         ╰───────────────────────────────────────────────────╯   ╰──────────────────────────────────────────────────╯
             >;
-
+			
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
@@ -80,16 +80,16 @@
 			    &kp F13      &kp F14       &kp F15     &kp F16       &kp F17      &kp F18                                  &kp F19      &kp F20       &kp F21       &kp F22       &kp F23      &kp F24    
 			//├────────────┼────────────┼────────────┼────────────┼────────────┼────────────┤   					     ├────────────┼────────────┼────────────┼────────────┼────────────┼────────────┤
 			//│    F1      │    F2      │    F3      │    F4      │    F5      │    F6      │   					     │     F7     │    F8      │    F9      │    F10     │    F11     │    F12     │
-				 &kp F1       &kp F2        &kp F3      &kp F4       &kp F5       &kp F6       					            &kp F7       &kp F8       &kp F9       &kp F10      &kp F11      &kp F12   
+			     &kp F1       &kp F2        &kp F3      &kp F4       &kp F5       &kp F6       					            &kp F7       &kp F8       &kp F9       &kp F10      &kp F11      &kp F12   
 			//├────────────┼────────────┼────────────┼────────────┼────────────┼────────────┤   					     ├────────────┼────────────┼────────────┼────────────┼────────────┼────────────┤
-			//│    SHIFT   │            │            │            │            │            │   					     │    <-      │    v       │    ^       │    ->      │            │            |
-				&kp LSHFT	    &none       &none         &none        &none       &none                                    &kp LEFT    &kp DOWN      &kp UP       &kp RIGHT      &none       &none
+			//│    SHIFT   │            │            │            │            │            │   					     │    <-      │    v       │    ^       │    ->      │            │      |     |
+				&kp LSHFT	    &none       &none         &none        &none       &none                                    &kp LEFT    &kp DOWN      &kp UP       &kp RIGHT      &none    &kp PIPE2   
 			//├────────────┼────────────┼────────────┼────────────┼────────────┼────────────┼────────────╮   ╭───────────┼────────────┼────────────┼────────────┼────────────┼────────────┼────────────┤
 			//│    CTRL    │            │            │            │            │            │            │   │           │      +     │     -      │      =     │      [     │      ]     │      \     │
-			    &kp LCTRL        &none       &none        &none        &none       &none       &none            &none     &kp KP_PLUS  &kp MINUS    &kp EQUAL    &kp LBKT     &kp RBKT    &kp NUBS
+			    &kp LCTRL        &none       &none        &none        &none       &none       &none            &none      &kp KP_PLUS  &kp MINUS    &kp EQUAL     &kp LBKT     &kp RBKT     &kp NUBS
 			//╰────────────┴────────────┴────────────┼────────────┼────────────┼────────────┼────────────┤   ├───────────┼────────────┼────────────┼────────────┼────────────┴────────────┴────────────╯
 			//								         │    GUI     │    LOWER   │    ALT     │    SPACE   │   │   BSPC    │   RETURN   │   RAISE    │    ALT     │
-												        &kp LGUI     &mo LOWER     &kp LALT   &kp SPACE        &kp BSPC     &kp RET    &mo RAISE       &kp RALT 
+												        &kp LGUI     &mo LOWER     &kp LALT   &kp SPACE        &kp BSPC     &kp RET     &mo RAISE     &kp RALT 
 			//								         ╰───────────────────────────────────────────────────╯   ╰──────────────────────────────────────────────────╯
             >;
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
