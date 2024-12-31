@@ -86,7 +86,7 @@
 				&kp LSHFT	  &kp EXCL     &kp AT       &kp HASH    &kp DOLLAR   &kp PRCNT                                  &kp LEFT    &kp DOWN      &kp UP       &kp RIGHT      &none    &kp PIPE2   
 			//├────────────┼────────────┼────────────┼────────────┼────────────┼────────────┼────────────╮   ╭───────────┼────────────┼────────────┼────────────┼────────────┼────────────┼────────────┤
 			//│    CTRL    │            │            │            │pause/break │            │            │   │           │      +     │     -      │      =     │      [     │      ]     │      \     │
-			    &kp LCTRL        &none       &none        &none    &PAUSE_BREAK    &none       &none            &none      &kp KP_PLUS  &kp MINUS    &kp EQUAL     &kp LBKT     &kp RBKT     &kp NUBS
+			    &kp LCTRL        &none       &none        &none    &kp PAUSE_BREAK    &none       &none            &none      &kp KP_PLUS  &kp MINUS    &kp EQUAL     &kp LBKT     &kp RBKT     &kp NUBS
 			//╰────────────┴────────────┴────────────┼────────────┼────────────┼────────────┼────────────┤   ├───────────┼────────────┼────────────┼────────────┼────────────┴────────────┴────────────╯
 			//								         │    GUI     │    LOWER   │    ALT     │    SPACE   │   │   BSPC    │    ALT     │   RAISE    │   RETURN   │
 												        &kp LGUI     &mo LOWER     &kp LALT   &kp SPACE        &kp BSPC     &kp LALT    &mo RAISE     &kp RET   
