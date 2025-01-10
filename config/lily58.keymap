@@ -24,6 +24,10 @@
         };
     };
 
+    &mt {
+	tapping-term-ms = <200>;
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -60,7 +64,7 @@
 				&kp GRAVE       &none        &none        &none        &none        &none                                  &kp C_PREV    &kp C_PP     &kp C_NEXT      &none        &none       &none   
 			//├────────────┼────────────┼────────────┼────────────┼────────────┼────────────┤   					     ├────────────┼────────────┼────────────┼────────────┼────────────┼────────────┤
 			//│    SHIFT   │    1       │    2       │    3       │    4       │    5       │   					     │      ^     │    &       │    *       │    (       │    )       │ ~ / SHIFT  │
-				&kp LSHFT	  &kp N1	   &kp N2       &kp N3       &kp N4       &kp N5                                    &kp CARET     &kp AMPS   &kp KP_MULTIPLY &kp LPAR   &kp RPAR     &mt RSHIFT STILDE
+				&kp LSHFT	  &kp N1	   &kp N2       &kp N3       &kp N4       &kp N5                                    &kp CARET     &kp AMPS   &kp KP_MULTIPLY &kp LPAR   &kp RPAR     &mt RSHIFT TILDE
 			//├────────────┼────────────┼────────────┼────────────┼────────────┼────────────┼────────────╮   ╭───────────┼────────────┼────────────┼────────────┼────────────┼────────────┼────────────┤
 			//│    CTRL    │    6       │    7       │    8       │    9       │    0       │            │   │           │            │            │            │            │            │    CTRL    │
 			    &kp LCTRL     &kp N6        &kp N7      &kp N8       &kp N9       &kp N0        &none           &none        &none         &none        &none        &none        &none      &kp RCTRL
